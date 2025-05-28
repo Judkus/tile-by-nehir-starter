@@ -27,10 +27,11 @@ img {
 
 /* Optional decorative border for each tile */
 .border-tile {
-  border: 20px solid transparent;
-  border-image: url('assets/wood.jpg') 30 round;
-  padding: 5px;
-  background-color: white;
+  border: 6px double #bfa27a;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(191,162,122,0.08);
+  padding: 0.25rem;
+  background: linear-gradient(135deg, #f5eee6 80%, #e8d9d6 100%);
 }
 
 /* Optional caption style if you add labels under your tiles */
@@ -39,6 +40,23 @@ img {
   margin-top: 8px;
   font-size: 14px;
   color: #444;
+}
+
+/* Tile card hover effect */
+.tile-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.tile-card:hover {
+  transform: translateY(-8px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.15), 0 1.5px 6px rgba(0,0,0,0.10);
+}
+
+/* Image enhancement on tile hover */
+.tile-img {
+  transition: filter 0.2s;
+}
+.tile-card:hover .tile-img {
+  filter: brightness(1.08) saturate(1.1);
 }
 
 /* 💡 Optional Enhancements:

@@ -29,16 +29,33 @@
         Tile by Nehir
       </h1>
 
-      <!-- Starting state: just images, no Bootstrap grid yet -->
-      <!-- You’ll turn these into responsive tiles during the demo -->
-      <img src="assets/tile1.jpg" alt="Tile print 1" class="mb-3" />
-      <img src="assets/tile2.jpg" alt="Tile print 2" class="mb-3" />
-      <img src="assets/tile3.jpg" alt="Tile print 3" class="mb-3" />
-      <img src="assets/tile4.jpg" alt="Tile print 4" class="mb-3" />
+      <!-- Bootstrap grid for images -->
+      <div class="row g-4 text-center mt-5 p-4 bg-light rounded-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card border-0 shadow-sm h-100 tile-card">
+            <img src="assets/tile1.jpg" alt="Tile print 1" class="card-img-top img-fluid rounded-3 mb-0 tile-img border-tile" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card border-0 shadow-sm h-100 tile-card">
+            <img src="assets/tile2.jpg" alt="Tile print 2" class="card-img-top img-fluid rounded-3 mb-0 tile-img border-tile" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card border-0 shadow-sm h-100 tile-card">
+            <img src="assets/tile3.jpg" alt="Tile print 3" class="card-img-top img-fluid rounded-3 mb-0 tile-img border-tile" />
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <div class="card border-0 shadow-sm h-100 tile-card">
+            <img src="assets/tile4.jpg" alt="Tile print 4" class="card-img-top img-fluid rounded-3 mb-0 tile-img border-tile" />
+          </div>
+        </div>
+      </div>
+      <!-- End Bootstrap grid for images -->
 
       <!-- 💡 Later you'll:
-         - Wrap these in Bootstrap grid classes
-         - Add .img-fluid and .border-tile
+         - Add .border-tile
          - Use AI to improve layout or spacing
     --></div><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
   </body>
