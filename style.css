@@ -59,9 +59,40 @@ img {
   filter: brightness(1.08) saturate(1.1);
 }
 
-/* 💡 Optional Enhancements:
-   - Try adding a hover effect with transform and box-shadow
-   - Use border-radius for rounded image corners
-   - Combine with Bootstrap utilities like p-3, mb-4, text-center
-   - Ask AI: “Add a subtle zoom effect on image hover”
-*/
+/* Parallax background section */
+.parallax-section {
+  min-height: 320px;
+  background-image: url('assets/wood.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  margin: 3rem 0;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+}
+
+.parallax-section::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(255,255,255,0.18);
+  border-radius: 1.5rem;
+  z-index: 2;
+}
+
+.parallax-content {
+  position: relative;
+  z-index: 3;
+  color: #4e3b2c;
+  text-align: center;
+  padding: 4rem 1rem;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 600;
+  text-shadow: 0 2px 8px rgba(255,255,255,0.5);
+}
+
+/* ...existing code... */
